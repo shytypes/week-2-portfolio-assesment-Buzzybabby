@@ -1,10 +1,221 @@
-/* remove default browser spacing*/
+/* remove default browser spacing */
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
-/*title text style*/
-/* the font-family 'JetBrains Mono', has been linked
- * and is available for your use
- * */
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #000000;
+  color: #d6b3ff;
+  line-height: 1.6;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+main h1 {
+  font-size: 3rem;
+  color: #bf00ff;
+  margin-bottom: 1rem;
+  text-align: center;
+  animation: textFadeIn 1.5s ease-in-out;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+main h1:hover {
+  transform: scale(1.1);
+  color: #ff66ff;
+}
+
+header {
+  background-color: #1a001a;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  animation: slideIn 1s ease-out;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+header:hover {
+  transform: scale(1.05);
+  background-color: #2e003e;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header nav ul li a {
+  color: #e0b3ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff66ff;
+  transform: scale(1.1);
+}
+
+section {
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+section:nth-child(even) {
+  animation-delay: 0.5s;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #cc66ff;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+  transform: scale(1.05);
+  color: #ff80ff;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #d9a0ff;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h3:hover {
+  transform: scale(1.05);
+  color: #ff80ff;
+}
+
+.project {
+  background-color: #1a001a;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+a {
+  color: #a64dff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff80ff;
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #b399ff;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  animation: footerMove 1.5s ease-out;
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  border: 1px solid #666;
+  border-radius: 6px;
+  background-color: #0d001a;
+  color: #fff;
+}
+
+button {
+  padding: 0.7rem;
+  background-color: #cc66ff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff80ff;
+}
+
+/* responsive tweaks */
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animations */
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes footerMove {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

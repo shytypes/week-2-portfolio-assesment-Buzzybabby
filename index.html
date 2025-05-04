@@ -1,7 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <!-- DO NOT CHANGE CODE WITHIN THE HEAD ELEMENT -->
-  <!-- UNLESS YOU KNOW WHAT YOU"RE DOING-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,10 +16,119 @@
   </head>
   <body>
     <!-- Header Area -->
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <!-- Main Area -->
     <main>
-      <h1>My Amazing Portfolio</h1>
+      <section id="hero">
+        <h1>My Amazing Portfolio</h1>
+        <p>
+          Welcome! I am a passionate QA Engineering learner exploring the tech
+          world.
+        </p>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate and motivated individual seeking a career in Quality
+          Assurance Engineering. With a strong interest in technology, I am
+          dedicated to contributing to the delivery of high quality software
+          solutions.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <a href="https://github.com/Buzzybabby/Learn-git/blob/6a10be8f362dc23f318bde091fc6096a4e359ead/test/calculator%20test.js" target="_blank">
+            <img
+              src="assets/images/JS for testers 2.png"
+              alt="JavaScript Test Screenshot"
+              style="width:100%; border-radius: 8px;"
+            />
+            <h3>JavaScript Testing</h3>
+          </a>
+          <p>
+            Tested JavaScript functions for basic calculations to ensure accurate results and reliable performance across different inputs.
+          </p>
+        </div>
+
+        <div class="project">
+          <a href="https://www.postman.com/flight-candidate-93151235/workspace/alaka-oluwabusayo/collection/37901414-3eb169aa-4913-40f9-a9c1-e1738a1406fd?action=share&creator=37901414" target="_blank">
+            <img
+              src="assets/images/postman 1.png"
+              alt="Postman Testing Screenshot"
+              style="width:100%; border-radius: 8px;"
+            />
+            <h3>Postman Testing</h3>
+          </a>
+          <p>
+            Used Postman to test API endpoints of the site, verifying responses, status codes, and data accuracy for both GET, POST and DELETE requests.
+          </p>
+        </div>
+
+        <div class="project">
+          <a href="https://github.com/Buzzybabby/Playwright/blob/3d30065ab1e3695249fde96e4a9fcea149289282/tests/ManualGen.spec.js" target="_blank">
+            <img
+              src="assets/images/playwright 4.png"
+              alt="Playwright Testing Screenshot"
+              style="width:100%; border-radius: 8px;"
+            />
+            <h3>Playwright Testing</h3>
+          </a>
+          <p>
+            Tested and verified the login feature using Playwright for correct authentication.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <form id="contactForm">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="secondName">Second Name:</label>
+          <input type="text" id="secondName" name="secondName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="formOutput" style="margin-top: 1.5rem;"></div>
+
+        <p>Email: <a href="mailto:alakaoluwabusayo@yahoo.com">Alaka Oluwabusayo</a></p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/oluwabusayo-alaka-055a0325b" target="_blank"
+            >Alaka Oluwabusayo</a
+          >
+        </p>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Alaka Oluwabusayo. All rights reserved.</p>
+    </footer>
+
+    <!-- Link external JavaScript file -->
+    <script src="scripts/main.js"></script>
   </body>
 </html>
