@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Capture the values from the form fields
     const firstName = document.getElementById('firstName').value.trim()
-    const lastName = document.getElementById('lastName').value.trim()
+    const lastName = document.getElementById('secondName').value.trim() // Corrected variable name here
     const email = document.getElementById('email').value.trim()
     const message = document.getElementById('message').value.trim()
 
     // Ensure the captured values are not empty (optional check)
-    if (!firstName || !secondName || !email || !message) {
+    if (!firstName || !lastName || !email || !message) {
       output.innerHTML = '<p>Please fill in all fields.</p>'
       return // Stop further processing if fields are empty
     }
