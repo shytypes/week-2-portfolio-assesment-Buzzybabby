@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <!-- add fonts -->
+    <!-- Add fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
-    <!-- local style -->
+    <!-- Local style -->
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
@@ -97,16 +97,16 @@
 
         <form id="contactForm">
           <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required />
+          <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
 
           <label for="lastName">Last Name:</label>
-          <input type="text" id="secondName" name="secondName" required />
+          <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" required autocomplete="email" />
 
           <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea id="message" name="message" required autocomplete="off"></textarea>
 
           <button type="submit">Submit</button>
         </form>
