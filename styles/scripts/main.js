@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Capture the values from the form fields
     const firstName = document.getElementById('firstName').value.trim()
-    const lastName = document.getElementById('secondName').value.trim() // Corrected variable name here
+    const lastName = document.getElementById('lastName').value.trim() // Corrected variable name here
     const email = document.getElementById('email').value.trim()
     const message = document.getElementById('message').value.trim()
 
