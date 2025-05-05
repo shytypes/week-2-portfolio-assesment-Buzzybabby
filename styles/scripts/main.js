@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Capture the values from the form fields
     const firstName = document.getElementById('firstName').value.trim()
-    const secondName = document.getElementById('secondName').value.trim()
+    const lastName = document.getElementById('lastName').value.trim()
     const email = document.getElementById('email').value.trim()
     const message = document.getElementById('message').value.trim()
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     output.innerHTML = `
       <h3>Form Submission:</h3>
       <p><strong>First Name:</strong> ${firstName}</p>
-      <p><strong>Second Name:</strong> ${secondName}</p>
+      <p><strong>Last Name:</strong> ${lastName}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Message:</strong> ${message}</p>
     `
